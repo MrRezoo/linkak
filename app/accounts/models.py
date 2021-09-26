@@ -28,7 +28,7 @@ class User(AbstractBaseUser, PermissionsMixin):
             'Unselect this instead of deleting accounts.'
         ),
     )
-    last_login = models.DateTimeField(_('last login'), blank=True, null=True)
+
     date_joined = models.DateTimeField(_('date joined'), default=timezone.now)
     modified_time = models.DateTimeField(_('update time'), auto_now=True)
 
